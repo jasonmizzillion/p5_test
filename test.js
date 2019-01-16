@@ -3,6 +3,10 @@ function setup() {
 }
 
 function draw() {
-	background(100, 200, 25);
-  ellipse(mouseX, mouseY, 80, 80);
+	background(300, 300, 25);
+beginShape();
+  vertex(80, 100);
+  quadraticVertex(207, 53, 164, 154);
+  bezierVertex(391, 384, 214, 137, 130, 310);
+endShape(CLOSE)
 }
